@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_3" data-name="Layer 3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 300">
+  <defs>
+    <style>
+      .cls-1 {
+        font-family: Manrope-Bold, Manrope;
+        font-size: 82.96px;
+        font-variation-settings: 'wght' 700;
+        font-weight: 700;
+      }
+
+      .cls-2 {
+        fill: #fff;
+      }
+
+      .cls-3 {
+        font-family: Manrope-Light, Manrope;
+        font-size: 45.9px;
+        font-variation-settings: 'wght' 300;
+        font-weight: 300;
+      }
+    </style>
+  </defs>
+  <text class="cls-2" transform="translate(133.8 159.73)"><tspan class="cls-1"><tspan x="0" y="0">SYSFY</tspan></tspan><tspan class="cls-3"><tspan x="0" y="40.17">Solutions</tspan></tspan></text>
+</svg>

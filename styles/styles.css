@@ -1,0 +1,492 @@
+/* ------------------------------------------general---------------------------------------- */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    cursor: url(cursor.png),auto;
+    background: url('Website Background-empty-01.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+.main-div {
+    font-family: open sans ;
+    color:white;
+    overflow:auto;
+}
+
+/* ------------------------------------------Navigation Bar styling-------------------------------------- */
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height:120px;
+    position: sticky;
+    z-index:6;
+    top:0px;
+    background-color:rgba(0, 0, 0, 0.106);
+    backdrop-filter: blur(10px);
+}
+
+/* Div containing the logo */
+.div-logo {
+    width:500px;
+}
+.div-logo img{
+    object-fit:cover;
+    width:250px;
+    height:100%;
+}
+/* div containing links to other pages */
+.div-links{
+    width:900px;
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.div-links a{
+    font-size: 25px;
+    letter-spacing: 2px;
+    text-decoration: none;
+    color: inherit;
+    opacity:70%;
+    transition: all 0.3s;
+    cursor: url(cursor.png),auto;
+}
+
+.div-links a:hover{
+    text-decoration: underline 2px;
+    text-underline-offset: 8px;
+    opacity:100%;
+}
+
+/* --------------------------------------Home page------------------------------------------------------ */
+
+.home {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+    font-family: manrope;
+}
+/* -------------Animations------------- */
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 55%;
+    }
+}
+
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* -------------Animations------------- */
+
+.home h1 {
+    font-size: 100px;
+    font-weight: bolder;
+    letter-spacing: -2px;
+    color: white;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 55%;
+    border-right: 2px solid white;
+    animation: typing 2s steps(30, end);
+}
+
+.home h2,
+.home h3 {
+    opacity: 0;
+    animation: fadeInUp 1s ease-out forwards;
+}
+
+.home h2 {
+    font-size: 55px;
+    font-weight: 400;
+    letter-spacing: 3px;
+    line-height: 130px;
+    animation-delay: 2.5s;
+}
+
+.home h3 {
+    text-align: center;
+    font-size: 35px;
+    font-weight: 200;
+    width: 900px;
+    animation-delay: 3s;
+}
+
+.home a button{
+    opacity:0;
+    animation: fadeInUp 1s ease-out forwards;
+}
+
+.home a{
+    font-family:manrope;
+    text-decoration: none;
+    color: inherit;
+    cursor: url(cursor.png),auto;
+}
+
+.home a button{
+    margin-top:30px;
+    background-color: white;
+    width:200px;
+    border:none;
+    font-size:22px;
+    padding:15px 0px 15px 0px;
+    border-radius:40px;
+    cursor: url(cursor.png),auto;
+    transition: all 0.3s;
+    animation-delay: 3.5s;
+}
+
+.home a button:hover{
+    background-color: transparent;
+    border:solid white 1px;
+    color:white;
+    transform: translateY(10px);
+}
+    
+.home a button:active{
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+
+
+/* -------------------------------Contact page styles------------------------------------ */
+
+.contact-div{
+    margin-top:40px;
+    height:700px;
+    width:1100px;
+    justify-self: center;
+    display:flex;
+    flex-direction:row;
+    border:solid 1px white;
+    border-radius:20px;
+    padding:50px;
+    font-family: manrope;
+    backdrop-filter: blur(20px);
+    animation: fadeInUp 1s ease-out forwards;
+}
+
+.contact-text{
+    display:flex;
+    flex-direction: column;
+    justify-content:space-between;
+    /* border:solid 5px lightpink; */
+}
+
+/* Target the first div inside .contact-text */
+.contact-text > div:first-child {
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height:300px;
+}
+
+/* Target the second div inside .contact-text */
+.contact-text > div:nth-child(2) {
+    display: flex;
+    flex-direction: column;
+}
+.contact-text > div:nth-child(2) i {
+    margin-right:10px;
+    margin-bottom: 10px;
+}
+
+
+
+.contact-text h1{
+    font-size:60px;
+    width:400px;
+    line-height: 50px;
+    letter-spacing: -2px;
+}
+.contact-text h2{
+    margin-top:-80px;
+    font-size:35px;
+    font-weight: 300;
+    width:400px;
+    line-height: 35px;
+}
+.contact-text div a{
+    font-size:30px;
+    text-decoration: none;
+    color: inherit;
+}
+
+.contact-form{
+    margin-left:20px;
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    /* border:solid 5px lightblue; */
+}
+
+.contact-form form p{
+    margin:10px 5px 5px 5px;
+    font-size:25px;
+}
+.contact-form form input, .contact-form form textarea{
+    background-color: rgba(255, 255, 255, 0.2);
+    margin-bottom:10px;
+    padding:10px 15px 10px 15px;
+    font-size:25px;
+    font-family: manrope;
+    width:550px;
+    border:none;
+    color:white;
+    resize: vertical;
+    max-height: 150px;
+    border-radius:10px;    
+    cursor: url(cursor.png),auto;
+}
+
+.contact-form form input:focus-visible , .contact-form form textarea:focus-visible{
+   outline: solid #ac2f8a 2px;
+}
+.contact-form button{
+    margin-top:10px;
+    background-color: white;
+    width:560px;
+    border:none;
+    font-size:22px;
+    padding:15px 0px 15px 0px;
+    border-radius:50px;
+    cursor: url(cursor.png),auto;
+    transition: all 0.3s;
+}
+.contact-form button:hover{
+    background-color: transparent;
+    border:solid white 1px;
+    color:white;
+}
+
+.contact-form button:active{
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* -------------------------------------Services Styling -----------------------------------------*/
+.service-main{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 100px;
+}
+
+/* ------------------------Get in touch button styling ------------------------*/
+.service-main a button{
+    margin-top:40px;
+    background-color: white;
+    height:100px;
+    width:1680px;
+    border:none;
+    padding:15px 0px 15px 0px;
+    border-radius:40px;
+    cursor: url(cursor.png),auto;
+    transition: all 0.3s;
+}
+.service-main a button{
+    font-family:manrope;
+    font-size:30px;
+    text-decoration: underline 2px;
+    text-underline-offset: 8px;
+    color:black;
+}
+.service-main a button:hover{
+    background-color: transparent;
+    border:solid white 1px;
+    color:white;
+}
+.service-main a button:active{
+    background-color: rgba(255, 255, 255, 0.2);
+}
+/* -------------------------get in touch button styling end------------------------ */
+
+.service-div{
+    margin-top:40px;
+    margin-right:40px;
+    height:400px;
+    width:800px;
+    justify-self: center;
+    display:flex;
+    flex-direction:row;
+    border:solid 1px white;
+    border-radius:20px;
+    padding:50px;
+    font-family: manrope;
+    backdrop-filter: blur(20px);
+    animation: fadeInUp 1s ease-out forwards;
+}
+
+.service-text{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* border:solid 5px lightpink; */
+}
+
+.service-text h1{
+    font-size:50px;
+    width:350px;
+    line-height: 50px;
+    letter-spacing: -2px;
+}
+.service-text h2{
+    font-size:25px;
+    font-weight: 300;
+    width:400px;
+    line-height: 35px;
+}
+.service-text div a{
+    font-size:20px;
+    text-decoration: none;
+    color: inherit;
+}
+
+.service-img{
+    margin-left:20px;
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    /* border:solid 5px lightblue; */
+}
+.service-img img{
+    height:100%;
+}
+
+
+/* ------------------------------------------About Us styling -----------------------------------------------------  */
+
+.about-main{
+    font-family:manrope;
+    display:flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 100px;
+}
+
+.about-heading{
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+}
+.about-heading h1 {
+    font-size: 70px;
+    font-weight: bolder;
+    letter-spacing: -2px;
+    color: white;
+    animation: fadeInUp 1s ease-out forwards;
+    white-space: nowrap;
+}
+
+.about-heading h2 {
+    font-size: 30px;
+    font-weight: 400;
+    letter-spacing: 3px;
+    width:1000px;
+    text-align: center;
+    animation: fadeInUp 1s ease-out forwards;
+}
+
+
+.about-qualities{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.about-div{
+    margin-top:40px;
+    margin-right:40px;
+    height:400px;
+    width:800px;
+    align-items: center;
+    justify-content: center;
+    display:flex;
+    flex-direction:column;
+    border:solid 1px white;
+    border-radius:20px;
+    padding:50px;
+    font-family: manrope;
+    backdrop-filter: blur(20px);
+    animation: fadeInUp 1s ease-out forwards;
+}
+
+.about-text{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* border:solid 5px lightpink; */
+}
+
+.about-div h1{
+    font-size:50px;
+    line-height: 50px;
+    letter-spacing: -2px;
+    margin-bottom:5px;
+}
+.about-div h2{
+    font-size:25px;
+    font-weight: 300;
+    width:600px;
+    text-align: center;
+}
+
+/* ---------------------------------------------Chat button---------------------------------------------------------- */
+.chat-button {
+    position: fixed;
+    z-index: 1;
+    bottom: 30px;
+    right: 40px;
+    background-color:rgba(205, 205, 205, 0.135);
+    backdrop-filter: blur(10px);
+    color:white;
+    padding: 10px 20px 10px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-family:manrope;
+    transition: all 0.5 ;
+}
+
+.chat-button:hover {
+    background-color:rgba(205, 205, 205, 0.245);
+    outline:solid 2px #25d366;
+}
+
+.whatsapp-icon {
+    width: 80px;
+    vertical-align: middle;
+    margin-right: 0.5rem;
+}
+
+.button-text {
+    font-size: 25px;
+    vertical-align: middle;
+}
+
+/*--------------------------------------------- chat buttton end---------------------------------------------- */
