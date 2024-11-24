@@ -9,6 +9,7 @@ body{
     cursor: url(cursor.png),auto;
     background: url('Website Background-empty-01.jpg') no-repeat center center fixed;
     background-size: cover;
+    padding-top: 120px;
 }
 
 .main-div {
@@ -23,8 +24,9 @@ nav{
     flex-direction: row;
     justify-content: space-between;
     height:120px;
-    position: sticky;
-    z-index:6;
+    width:100%;
+    position:fixed;
+    z-index:8;
     top:0px;
     background-color:rgba(0, 0, 0, 0.106);
     backdrop-filter: blur(10px);
