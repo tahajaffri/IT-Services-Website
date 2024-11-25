@@ -495,3 +495,115 @@ nav{
 }
 
 /*--------------------------------------------- chat buttton end---------------------------------------------- */
+
+/* General Media Queries */
+
+/* Target tablets (width <= 768px) */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        height: auto;
+        padding: 10px;
+    }
+    .div-logo img {
+        width: 150px;
+    }
+    .div-links {
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .div-links a {
+        font-size: 20px;
+    }
+    .home h1 {
+        font-size: 60px;
+        width: 80%;
+    }
+    .home h2 {
+        font-size: 40px;
+    }
+    .home h3 {
+        font-size: 25px;
+        width: 100%;
+    }
+    .contact-div {
+        flex-direction: column;
+        width: 90%;
+        height: auto;
+        padding: 20px;
+    }
+    .contact-text h1 {
+        font-size: 40px;
+        width: 100%;
+    }
+    .contact-text h2 {
+        font-size: 25px;
+    }
+    .contact-form form input,
+    .contact-form form textarea {
+        width: 100%;
+    }
+    .contact-form button {
+        width: 100%;
+    }
+    .service-div {
+        width: 100%;
+        margin: 20px 0;
+    }
+    .about-div {
+        width: 100%;
+        margin: 20px 0;
+    }
+    .about-heading h1 {
+        font-size: 50px;
+    }
+    .about-heading h2 {
+        font-size: 20px;
+    }
+}
+
+/* Target small phones (width <= 480px) */
+@media (max-width: 480px) {
+    .div-logo img {
+        width: 100px;
+    }
+    .div-links a {
+        font-size: 18px;
+    }
+    .home h1 {
+        font-size: 50px;
+    }
+    .home h2 {
+        font-size: 30px;
+    }
+    .home h3 {
+        font-size: 20px;
+    }
+    .contact-div {
+        padding: 10px;
+    }
+    .contact-text h1 {
+        font-size: 30px;
+    }
+    .contact-text h2 {
+        font-size: 20px;
+    }
+    .contact-form form input,
+    .contact-form form textarea {
+        font-size: 18px;
+    }
+    .contact-form button {
+        font-size: 20px;
+    }
+    .service-div,
+    .about-div {
+        padding: 20px;
+    }
+    .about-heading h1 {
+        font-size: 40px;
+    }
+    .about-heading h2 {
+        font-size: 18px;
+    }
+}
