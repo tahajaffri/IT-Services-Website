@@ -5,6 +5,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+html{
+    scroll-behavior:smooth;
+}
 body{
     cursor: url(cursor.png),auto;
     background: url('Website Background-empty-01.jpg') no-repeat center center fixed;
@@ -264,7 +267,7 @@ nav{
 }
 
 .contact-form form input:focus-visible , .contact-form form textarea:focus-visible{
-   outline: solid #ac2f8a 2px;
+   outline: solid #36c947 2px;
 }
 .contact-form button{
     margin-top:10px;
