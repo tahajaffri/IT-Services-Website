@@ -258,6 +258,8 @@ nav{
     font-size:25px;
     font-family: manrope;
     width:550px;
+    caret-color: #36c947;
+    accent-color: red;
     border:none;
     color:white;
     resize: vertical;
@@ -468,7 +470,7 @@ nav{
     z-index: 1;
     bottom: 30px;
     right: 40px;
-    background-color:rgba(205, 205, 205, 0.135);
+    background-color:rgba(205, 205, 205, 0.3);
     backdrop-filter: blur(10px);
     color:white;
     padding: 10px 20px 10px 20px;
@@ -479,7 +481,7 @@ nav{
 }
 
 .chat-button:hover {
-    background-color:rgba(205, 205, 205, 0.245);
+    background-color:rgba(205, 205, 205, 0.4);
     outline:solid 2px #25d366;
 }
 
